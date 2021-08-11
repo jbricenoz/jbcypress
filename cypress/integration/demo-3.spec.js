@@ -4,7 +4,7 @@ import HomePage from '../pages/home/home.page.model3';
 describe('Example of POM', () => {
 
     beforeEach(() => {
-      cy.visit(Cypress.config().baseUrl)
+        cy.visit(Cypress.config().baseUrl)
     })
 
     it('App displays card title Documentation #1', () => {
@@ -26,13 +26,13 @@ describe('Example of POM', () => {
     it('App displays page title #2', () => {
         HomePage.getPageTitle().should('have.text', 'Next.js + Cypress')
     })
-    
+
     it('App send keys to input', () => {
         HomePage.setTextOnInputDemo('HOLA')
     })
-  
-    afterEach(()=>{
+
+    afterEach(() => {
         cy.log('After all!')
     })
-   
-  })
+
+})

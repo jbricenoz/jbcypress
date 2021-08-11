@@ -6,9 +6,9 @@ describe('Example of POM', () => {
     const home = new Home()
 
     beforeEach(() => {
-      cy.visit(Cypress.config().baseUrl)
+        cy.visit(Cypress.config().baseUrl)
     })
-  
+
     it('App displays card title Documentation #1', () => {
         home.getDocumentCardTitle().should('have.text', 'Documentation →')
     })
@@ -24,9 +24,9 @@ describe('Example of POM', () => {
     it('App send keys to input', () => {
         home.setTextOnInputDemo('HOLA')
     })
-  
-    afterEach(()=>{
+
+    afterEach(() => {
         cy.log('After all!')
     })
-   
-  })
+
+})
