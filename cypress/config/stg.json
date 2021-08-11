@@ -1,0 +1,8 @@
+{
+    "baseUrl": "http://example.stage.com/",
+    "defaultCommandTimeout": 10000,
+    "ignoreTestFiles": "**/examples/**",
+    "env": {
+        "environment": "stage"
+    }
+}

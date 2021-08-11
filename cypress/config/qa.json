@@ -1,0 +1,11 @@
+{
+    "baseUrl": "http://localhost:3000/",
+    "defaultCommandTimeout": 10000,
+    "ignoreTestFiles": [
+        "**/1-getting-started/**",
+        "**/2-advanced-examples/**"
+    ],
+    "env": {
+        "environment": "qa"
+    }
+}
