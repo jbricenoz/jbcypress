@@ -1,6 +1,14 @@
 {
-    "baseUrl": "http://localhost:3000/dev/",
+    "baseUrl": "https://stackoverflow.com",
+    "defaultCommandTimeout": 10000,
+    "modifyObstructiveCode": false,
+    "chromeWebSecurity": false,
+    "component": { "componentFolder": "src", "testFiles": "**/*.spec.js" },
+    "ignoreTestFiles": [
+        "**/1-getting-started/**",
+        "**/2-advanced-examples/**"
+    ],
     "env": {
-      "environment": "development"
+        "environment": "dev"
     }
-  }
+}
